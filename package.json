@@ -1,0 +1,29 @@
+{
+  "name": "stream-to-neo4j",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duplotech/stream-to-neo4j.git"
+  },
+  "author": "Seb Insua <me@sebinsua.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "^6"
+  },
+  "scripts": {
+    "commitmsg": "validate-commit-msg",
+    "push": "git push --follow-tags origin master",
+    "release": "standard-version && npm run -s push && npm publish"
+  },
+  "dependencies": {
+    "cypher-stream": "^1.0.1",
+    "debug": "^2.6.0",
+    "tap-stream": "^0.2.0",
+    "through2-map": "^3.0.0"
+  },
+  "devDependencies": {
+    "husky": "^0.13.1",
+    "validate-commit-msg": "^2.11.1"
+  }
+}
