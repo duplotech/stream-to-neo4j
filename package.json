@@ -1,6 +1,6 @@
 {
   "name": "stream-to-neo4j",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "husky": "^0.13.1",
+    "standard-version": "^4.0.0",
     "validate-commit-msg": "^2.11.1"
   }
 }
