@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.5"></a>
+## [0.0.5](https://github.com/duplotech/stream-to-neo4j/compare/v0.0.4...v0.0.5) (2017-02-11)
+
+
+### Bug Fixes
+
+* **packages:** added missing package ([6836391](https://github.com/duplotech/stream-to-neo4j/commit/6836391))
+
+
+
 <a name="0.0.4"></a>
 ## [0.0.4](https://github.com/duplotech/stream-to-neo4j/compare/v0.0.3...v0.0.4) (2017-02-11)
 
