@@ -7,14 +7,6 @@ const autoTransaction = require('./auto-transaction');
 
 const toDebugLog = tap(data => debug(data));
 
-const onCommitted = exitOnCommit => () => {
-  debug('committed')
-  if (exitOnCommit === true) {
-    debug('exiting');
-    process.exit(0);
-  }
-};
-
 function createStreamToDatabase ({ url, username, password, exitOnCommit }, generateStatements, toType) {
   const cs = cypherStream(url, username, password);
   return stream => {
