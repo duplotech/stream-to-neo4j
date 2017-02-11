@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.6"></a>
+## [0.0.6](https://github.com/duplotech/stream-to-neo4j/compare/v0.0.5...v0.0.6) (2017-02-11)
+
+
+### Bug Fixes
+
+* **auto-transaction:** missing function ([fbb9be7](https://github.com/duplotech/stream-to-neo4j/commit/fbb9be7))
+
+
+
 <a name="0.0.5"></a>
 ## [0.0.5](https://github.com/duplotech/stream-to-neo4j/compare/v0.0.4...v0.0.5) (2017-02-11)
 
