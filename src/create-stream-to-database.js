@@ -1,4 +1,4 @@
-const debug = require('debug')('stream-to-db');
+const debug = require('debug')('stream-to-neo4j');
 const cypherStream = require('cypher-stream');
 const tap = require('tap-stream');
 
