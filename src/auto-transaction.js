@@ -1,3 +1,4 @@
+const debug = require('debug')('stream-to-neo4j');
 const writer = require('flush-write-stream');
 
 const onCommitted = exitOnCommit => () => {
