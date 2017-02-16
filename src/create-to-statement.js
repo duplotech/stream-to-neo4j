@@ -1,3 +1,5 @@
+const debug = require('debug')('stream-to-neo4j:create-to-statement');
+
 const map = require('through2-map');
 
 const prop = propName => (obj = {}) => obj[propName];
@@ -12,7 +14,10 @@ const cleanWhitespace = v =>
 const createToStatement = (generateStatements, toType = prop('type')) => map.obj(v => {
   const type = toType(v);
   const generateStatement = generateStatements[type];
-  const statements = generateStatement(v);
+  if (!generateStatement) {
+    debug(`The type ${type} did not have a matching generateStatement function`);
+  }
+  const statements = generateStatement ? generateStatement(v) : [];
   return Array.isArray(statements) ? statements.filter(isTruthy).map(cleanWhitespace) : cleanWhitespace(statements);
 });
 
