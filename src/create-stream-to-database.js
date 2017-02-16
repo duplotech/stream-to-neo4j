@@ -9,8 +9,8 @@ const toDebugLog = tap(data => debug(data));
 
 function createStreamToDatabase ({ url, username, password, exitOnCommit }, generateStatements, toType) {
   const cs = cypherStream(url, username, password);
-  return stream => {
-    const toStatement = createToStatement(generateStatements, toType);
+  return (stream, commitSize) => {
+    const toStatement = createToStatement(generateStatements, toType, commitSize);
     return stream
       .pipe(toStatement)
       .pipe(toDebugLog)
