@@ -3,4 +3,4 @@
 
 ## Example
 
-See [example](./src/example/index.js) for usage.
+See [example](./example/index.js) for usage.
