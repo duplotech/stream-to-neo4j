@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/duplotech/stream-to-neo4j/compare/v0.1.0...v0.1.1) (2017-02-22)
+
+
+### Bug Fixes
+
+* **node:** avoid saving invalid types ([9ae083d](https://github.com/duplotech/stream-to-neo4j/commit/9ae083d))
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/duplotech/stream-to-neo4j/compare/v0.0.7...v0.1.0) (2017-02-16)
 
